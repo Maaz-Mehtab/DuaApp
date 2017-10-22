@@ -1,0 +1,54 @@
+.bord {
+    /*padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;*/
+    border-top: 10px solid red;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+}
+
+.rig {
+    margin: 0 2%;
+}
+
+.text {
+    float: left;
+    display: inline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-manual {
+    background: #00695C;
+    color: #B2DFDB;
+}
+
+.left {
+    float: left;
+}
+
+#username {
+    font-size: 24px;
+}
+
+.btn-outline-manual {
+    color: #00695C;
+    background-color: transparent;
+    background-image: none;
+    border-color: #00695C;
+}
+
+.bg-off {
+    background: white;
+    color: black;
+    border: 2px solid lightgray;
+}
+
+.mb-6 {
+    margin-top: -150px;
+}
+

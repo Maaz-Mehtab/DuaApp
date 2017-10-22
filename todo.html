@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Aap</title>
+    <link rel="stylesheet" href="lib/boot.css">
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDmdh4QoGh7J1tw26c8kycI6slMaY-27Y8",
+            authDomain: "lab-firebase-f778d.firebaseapp.com",
+            databaseURL: "https://lab-firebase-f778d.firebaseio.com",
+            projectId: "lab-firebase-f778d",
+            storageBucket: "lab-firebase-f778d.appspot.com",
+            messagingSenderId: "1011813349581"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+<!--<body>-->
+
+<body>
+
+
+
+
+    <div class="container bg-info text-danger">
+        <div class="text">
+            <h4 id="name"></h4>
+        </div>
+        <center>
+            <h3>TODO APP REAL TIME</h3>
+        </center>
+    </div>
+
+    <div class="container">
+        <input type="text" id="input" class="form-control" placeholder="Enter Todo" required autofocus>
+        <br>
+        <center>
+            <button class="btn btn-lg btn-outline-success" onclick="todo()">Submit</button>
+        </center>
+    </div>
+    <br>
+    <div class="container  float-left">
+        <ul class="list-group" id="unOrderList">
+
+        </ul>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/poper.js"></script>
+    <script src="lib/bootsta.js"></script>
+
+</body>
+<script src="app.js"></script>
+<script>
+</script>
+
+</html>

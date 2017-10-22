@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dua app</title>
+    <link rel="stylesheet" href="lib/boot.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDmdh4QoGh7J1tw26c8kycI6slMaY-27Y8",
+            authDomain: "lab-firebase-f778d.firebaseapp.com",
+            databaseURL: "https://lab-firebase-f778d.firebaseio.com",
+            projectId: "lab-firebase-f778d",
+            storageBucket: "lab-firebase-f778d.appspot.com",
+            messagingSenderId: "1011813349581"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-manual">
+
+
+        <nav class="navbar justify-content-between brand-name mb-3">
+            <a class="navbar brand-name text-white" id="username" href=""></a>
+
+            <form class="form-inline">
+
+                <button class="btn btn-success mr-1" onclick="location='feed.html'" type="button">Feed</button>
+
+                <button class="btn btn-danger ml-1" onclick="location='index.html'" type="button">logout</button>
+            </form>
+
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <h1 class="display-4">Profile</h1>
+                <table class="table ">
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">First Name</th>
+                            <td id="fname"></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Lasr Name</th>
+                            <td id="lname"></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Email</th>
+                            <td id="email"></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Age</th>
+                            <td id="age"></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Gender</th>
+                            <td id="gender"></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Phone No</th>
+                            <td id="phone"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class=" container btn bg-manual">Edit Profile</button>
+            </div>
+
+
+
+            <div class="div col-md-6">
+                <h1 class="display-4 mb-4">Posts</h1>
+                <div id="postDiv" class="p-2 rounded">
+                </div>
+            </div>
+
+            <div class="div col-md-3">
+                <h1 class="display-4 mb-4">Write Post</h1>
+                <div class="p-2 rounded bg-white">
+                    <div class="form-group">
+                        <h1 id="sendername" class="display-4 mb-3 text-dark" style="font-size: 36px;"></h1>
+
+
+                        <textarea class="form-control" id="ppost" placeholder="Write something to pray for someone..." rows="12"></textarea>
+                    </div>
+                    <button class=" col-md-12 btn btn-success" onclick="posts()" id="postBtn">Submit Post</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--<div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input class="col-md-12 form-control" id="sname" type="text" placeholder="Sender Name">
+
+                    <textarea class="form-control mt-4" placeholder="Write something to pray for everyone" id="ppost" rows="3"></textarea>
+
+                </div>
+                <button onclick="posts()" class=" col-md-12 btn btn-success">Submit Post</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mt-3">
+
+            </div>
+            <div id="pak" class="col-md-4 mt-3">
+                <div class="container bg-white" style="height: 250px;">
+                    <h3 class="text-center bg-manual" id="nam"></h3>
+                    <hr><br>
+                    <h5 class="" id="snam"></h5>
+                    <hr><br>
+                    <p class="text-justify" id="po"></p>
+
+
+                    <button class="btn col-sm-3 btn-outline-success" type="button"> Like</button>
+                    <button onclick="commentss()" class="btn col-sm-3 btn-outline-success" type="button"> Comment</button>
+
+
+                    <p id="comment"></p>
+                    <hr><br>
+
+                    <div class="container bg-off mb-6 " id="show" style="height: 90px"></div>
+
+                </div>
+            </div>
+        </div>-->
+
+
+
+
+
+
+
+
+</body>
+<script src="duaapp.js"></script>
+
+</html>
